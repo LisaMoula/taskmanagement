@@ -2,16 +2,19 @@ name: CI
 
 on:
   push:
-    branches: [develop]
+    branches: [main, test, tests]
   pull_request:
-    branches: [main]
+    branches: [main, test, tests]
+  workflow_dispatch:
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
+
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
