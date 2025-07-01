@@ -43,7 +43,7 @@ tests End-to-End (E2E) avec Selenium
 
 # Tests End-to-End (E2E) avec Selenium
 
-Ce document présente une vue d'ensemble des différents tests E2E implémentés dans le projet, en utilisant Selenium WebDriver avec JavaScript.
+
 
 ## Prérequis
 
@@ -130,7 +130,6 @@ describe('Description du test', () => {
 
 # Tests d'Intégration API avec Jest et Supertest
 
-Ce document présente une documentation claire et complète sur les tests d'intégration des API utilisateur et tâches utilisant Jest et Supertest.
 
 ## Prérequis
 
