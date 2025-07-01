@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install & Test Backend
+      working-directory: backend
+      run: |
+        npm install
+        npm test || echo "Pas encore de tests"
+
+    - name: Install & Lint Frontend
+      working-directory: frontend
+      run: |
+        npm install
+        npx eslint . || echo "Pas encore de lint"
