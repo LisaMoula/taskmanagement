@@ -38,12 +38,10 @@ Application de gestion de tâches
 
 
 # Tests et qualité
-tests End-to-End (E2E) avec Selenium
 
 
 # Tests End-to-End (E2E) avec Selenium
 
-Ce document présente une vue d'ensemble des différents tests E2E implémentés dans le projet, en utilisant Selenium WebDriver avec JavaScript.
 
 ## Prérequis
 
@@ -153,7 +151,7 @@ Exécutez la commande suivante pour lancer les tests d'intégration :
 npm run test:integration
 ```
 
-Assurez-vous que cette commande est définie dans votre `package.json` :
+Assurez que la commande est définie dans  `package.json` :
 
 ```json
 "scripts": {
@@ -214,7 +212,6 @@ describe('Description des tests', () => {
 
 # Tests d'API pour les routes `/api/tasks`
 
-Ce document fournit une documentation claire et détaillée des tests d'intégration pour les routes liées aux tâches (`/api/tasks`) en utilisant Jest et Supertest.
 
 ## Prérequis
 
@@ -238,7 +235,7 @@ Lancez les tests avec la commande suivante :
 npm run test:tasks
 ```
 
-Assurez-vous que cette commande soit définie dans `package.json` :
+Assurez que cette commande soit définie dans `package.json` :
 
 ```json
 "scripts": {
